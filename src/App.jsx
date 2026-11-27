@@ -4,17 +4,17 @@ function App() {
       <h1 className="px-4 py-2 text-3xl font-bold md:pt-0 md:text-4xl md:portrait:text-5xl">
         Keyforge
       </h1>
-      <p className="p-4 md:text-lg md:portrait:p-6 md:portrait:text-xl">
+      <p className="p-4 text-slate-500 md:text-lg md:portrait:p-6 md:portrait:text-xl">
         Generate strong, random credentials
       </p>
       <section id="display-password">
         <input
-          className="my-2 rounded-l-2xl bg-blue-200 px-2 py-4 md:text-lg md:portrait:px-4 md:portrait:text-2xl"
+          className="my-2 rounded-l-2xl border border-slate-200 bg-slate-50 px-2 py-4 font-mono text-slate-900 placeholder:text-slate-400 md:text-lg md:portrait:px-4 md:portrait:text-2xl"
           type="text"
           placeholder="Password"
           readOnly
         />
-        <button className="rounded-r-2xl bg-blue-500 p-4 text-white hover:cursor-pointer hover:brightness-120 md:text-lg md:portrait:text-2xl">
+        <button className="rounded-r-2xl bg-indigo-600 p-4 text-white hover:cursor-pointer hover:brightness-120 md:text-lg md:portrait:text-2xl">
           copy
         </button>
       </section>
@@ -23,22 +23,22 @@ function App() {
         <div>
           <div className="flex items-center justify-between">
             <label
-              className="md: p-2 text-xl md:text-2xl md:portrait:text-3xl"
+              className="md: p-2 text-xl text-indigo-700 md:text-2xl md:portrait:text-3xl"
               htmlFor=""
             >
               Length:
             </label>
-            <button className="my-2 size-10 rounded-full bg-amber-100 text-xl md:text-2xl md:portrait:text-3xl"></button>
+            <button className="my-2 size-10 rounded-full border border-indigo-100 bg-indigo-50 text-xl font-semibold text-indigo-700 md:text-2xl md:portrait:text-3xl"></button>
           </div>
           <input
-            className="my-4 w-full hover:cursor-pointer"
+            className="my-4 w-full accent-indigo-600 hover:cursor-pointer"
             type="range"
             min={8}
             max={20}
           />
         </div>
         <div className="flex flex-wrap gap-4">
-          <button className="rounded-2xl bg-amber-100 p-2 hover:cursor-pointer">
+          <button className="rounded-2xl border border-slate-200 bg-slate-50 p-2 text-slate-700 hover:cursor-pointer hover:bg-slate-200">
             <div className="flex items-center justify-between">
               <label
                 className="pr-4 pl-2 text-xl hover:cursor-pointer md:text-2xl md:portrait:text-3xl"
@@ -55,7 +55,7 @@ function App() {
             </div>
             <span className="text-lg md:portrait:text-2xl">(0-9)</span>
           </button>
-          <button className="rounded-2xl bg-amber-100 hover:cursor-pointer">
+          <button className="rounded-2xl border border-slate-200 bg-slate-50 text-slate-700 hover:cursor-pointer hover:bg-slate-200">
             <div className="flex items-center justify-between">
               <label
                 className="pr-4 pl-2 text-xl hover:cursor-pointer md:text-2xl md:portrait:text-3xl"
