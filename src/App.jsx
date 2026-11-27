@@ -83,7 +83,7 @@ function App() {
         </div>
         <div className="flex flex-wrap gap-4">
           <button
-            className="rounded-2xl border border-slate-200 bg-slate-50 p-2 text-slate-700 hover:cursor-pointer hover:bg-slate-200 dark:border-slate-800 dark:bg-slate-950/70 dark:text-slate-200 dark:hover:border-slate-700"
+            className="rounded-2xl border border-slate-200 bg-slate-50 p-2 text-slate-700 hover:cursor-pointer hover:bg-slate-200 dark:border-slate-800 dark:bg-slate-950/70 dark:text-slate-200 dark:hover:border-slate-700 dark:hover:bg-slate-900 dark:hover:text-slate-100"
             onClick={() => {
               setIsNumbersAllowed((prev) => !prev);
             }}
@@ -106,7 +106,7 @@ function App() {
             <span className="text-lg md:portrait:text-2xl">(0-9)</span>
           </button>
           <button
-            className="rounded-2xl border border-slate-200 bg-slate-50 text-slate-700 hover:cursor-pointer hover:bg-slate-200 dark:border-slate-800 dark:bg-slate-950/70 dark:text-slate-200 dark:hover:border-slate-700"
+            className="rounded-2xl border border-slate-200 bg-slate-50 text-slate-700 hover:cursor-pointer hover:bg-slate-200 dark:border-slate-800 dark:bg-slate-950/70 dark:text-slate-200 dark:hover:border-slate-700 dark:hover:bg-slate-900 dark:hover:text-slate-100"
             onClick={() => {
               setIsSymbolsAllowed((prev) => !prev);
             }}
