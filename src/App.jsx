@@ -7,9 +7,9 @@ function App() {
       <p className="p-4 text-slate-500 md:text-lg md:portrait:p-6 md:portrait:text-xl dark:text-slate-400">
         Generate strong, random credentials
       </p>
-      <section id="display-password">
+      <section id="display-password" className="flex items-center">
         <input
-          className="my-2 rounded-l-2xl border border-slate-200 bg-slate-50 px-2 py-4 font-mono text-slate-900 caret-transparent outline-0 placeholder:text-slate-400 md:text-lg md:portrait:px-4 md:portrait:text-2xl dark:border-slate-800 dark:bg-slate-950 dark:text-slate-100 dark:placeholder:text-slate-500"
+          className="rounded-l-2xl border border-slate-200 bg-slate-50 px-2 py-4 font-mono text-slate-900 caret-transparent outline-0 placeholder:text-slate-400 md:text-lg md:portrait:px-4 md:portrait:text-2xl dark:border-slate-800 dark:bg-slate-950 dark:text-slate-100 dark:placeholder:text-slate-500"
           type="text"
           placeholder="Password"
           readOnly
