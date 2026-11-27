@@ -10,12 +10,19 @@ function App() {
           placeholder="Password"
           readOnly
         />
-        <button className="text-l bg-blue-500 p-4 text-white">copy</button>
+        <button className="text-l bg-blue-500 p-4 text-white hover:cursor-pointer hover:brightness-120">
+          copy
+        </button>
       </section>
 
       <section id="modify-password">
         <div>
-          <input className="my-4" type="range" min={8} max={20} />
+          <input
+            className="my-4 hover:cursor-pointer"
+            type="range"
+            min={8}
+            max={20}
+          />
           <label className="px-4 py-2 text-xl" htmlFor="">
             Length:
           </label>
@@ -23,7 +30,7 @@ function App() {
         <div className="flex flex-wrap">
           <div className="my-2">
             <input
-              className="size-4"
+              className="size-4 hover:cursor-pointer"
               type="checkbox"
               name="numbers"
               id="numbers"
@@ -34,7 +41,7 @@ function App() {
           </div>
           <div className="my-2">
             <input
-              className="size-4 text-xl"
+              className="size-4 text-xl hover:cursor-pointer"
               type="checkbox"
               name="characters"
               id="characters"
