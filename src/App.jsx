@@ -15,7 +15,7 @@ function App() {
     if (isSymbolsAllowed) str += `!"#$%&'()*+,-./:;<=>?@[]^_{|}~\``;
 
     for (let i = 0; i < length; i++) {
-      const index = Math.floor(Math.random() * str.length + 1);
+      const index = Math.floor(Math.random() * str.length);
       passwd += str.charAt(index);
     }
 
@@ -24,7 +24,7 @@ function App() {
 
   useEffect(
     () => generatePassword(),
-    [length, isNumbersAllowed, isSymbolsAllowed],
+    [length, isNumbersAllowed, isSymbolsAllowed], 
   );
 
   const copyPasswordToClipboard = () => {
@@ -75,7 +75,7 @@ function App() {
             type="range"
             min={8}
             max={20}
-            value={password}
+            value={length}
             onChange={(e) => {
               setLength(e.target.value);
             }}
@@ -101,6 +101,7 @@ function App() {
                 name="numbers"
                 id="numbers"
                 checked={isNumbersAllowed}
+                onClick={() => setIsNumbersAllowed((prev) => !prev)}
               />
             </div>
             <span className="text-lg md:portrait:text-2xl">(0-9)</span>
@@ -124,6 +125,7 @@ function App() {
                 name="symbols"
                 id="symbols"
                 checked={isSymbolsAllowed}
+                onClick={() => setIsSymbolsAllowed((prev) => !prev)}
               />
             </div>
             <span className="text-lg md:portrait:text-2xl">(!@#$)</span>
