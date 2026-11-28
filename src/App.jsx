@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 
 function App() {
   const [length, setLength] = useState(8);
@@ -7,7 +7,7 @@ function App() {
   const [password, setPassword] = useState("");
   const passwordRef = useRef();
 
-  const generatePassword = () => {
+  const generatePassword = useCallback(() => {
     let passwd = "";
     let str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -20,11 +20,11 @@ function App() {
     }
 
     setPassword(passwd);
-  };
+  }, [length, isNumbersAllowed, isSymbolsAllowed]);
 
   useEffect(
     () => generatePassword(),
-    [length, isNumbersAllowed, isSymbolsAllowed], 
+    [length, isNumbersAllowed, isSymbolsAllowed],
   );
 
   const copyPasswordToClipboard = () => {
