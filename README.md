@@ -21,14 +21,14 @@ A lightweight, responsive password generator built with **React 19 and Tailwind 
 
 ## 🛠️ Built With
 
-| Technology                                                                   | Purpose                                     |
-| ---------------------------------------------------------------------------- | ------------------------------------------- |
-| [React 19](https://react.dev/)                                               | Building the user interface                 |
-| [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | Password generation and application logic   |
-| [Tailwind CSS 4](https://tailwindcss.com/)                                   | Utility-first styling and responsive design |
-| [Vite](https://vite.dev/)                                                    | Development server and build tooling        |
-| [ESLint](https://eslint.org/)                                                | Code quality and linting                    |
-| [Prettier](https://prettier.io/)                                             | Code formatting                             |
+| Technology | Purpose |
+|---|---|
+| [React 19](https://react.dev/) | Building the user interface |
+| [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | Password generation and application logic |
+| [Tailwind CSS 4](https://tailwindcss.com/) | Utility-first styling and responsive design |
+| [Vite](https://vite.dev/) | Development server and build tooling |
+| [ESLint](https://eslint.org/) | Code quality and linting |
+| [Prettier](https://prettier.io/) | Code formatting |
 
 ### React Concepts Used
 
@@ -86,12 +86,12 @@ http://localhost:5173/
 
 ### Available Scripts
 
-| Command           | Description                           |
-| ----------------- | ------------------------------------- |
-| `npm run dev`     | Starts the Vite development server    |
-| `npm run build`   | Builds the application for production |
+| Command | Description |
+|---|---|
+| `npm run dev` | Starts the Vite development server |
+| `npm run build` | Builds the application for production |
 | `npm run preview` | Previews the production build locally |
-| `npm run lint`    | Runs ESLint to check for code issues  |
+| `npm run lint` | Runs ESLint to check for code issues |
 
 ## 📂 Project Structure
 
@@ -113,25 +113,27 @@ keyforge-password-generator/
 ├── index.html
 ├── package.json
 ├── package-lock.json
+├── vercel.json
 └── vite.config.js
 ```
 
 ### File Overview
 
-| File / Directory         | Description                                                                         |
-| ------------------------ | ----------------------------------------------------------------------------------- |
-| `src/assets/`            | Contains application assets.                                                        |
-| `src/assets/favicon.png` | Custom favicon displayed in the browser tab.                                        |
-| `src/App.jsx`            | Main React component containing the password generator interface and functionality. |
-| `src/index.css`          | Imports Tailwind CSS and provides the global stylesheet entry point.                |
-| `src/main.jsx`           | Entry point that renders the React application using `createRoot`.                  |
-| `index.html`             | HTML document serving as the application entry point and referencing the favicon.   |
-| `vite.config.js`         | Configures Vite and its React and Tailwind CSS plugins.                             |
-| `eslint.config.js`       | Contains ESLint configuration.                                                      |
-| `.prettierrc.json`       | Contains Prettier formatting preferences.                                           |
-| `package.json`           | Defines project dependencies and npm scripts.                                       |
-| `package-lock.json`      | Locks dependency versions for consistent installations.                             |
-| `.gitignore`             | Specifies files and directories Git should ignore.                                  |
+| File / Directory | Description |
+|---|---|
+| `src/assets/` | Contains application assets. |
+| `src/assets/favicon.png` | Custom favicon displayed in the browser tab. |
+| `src/App.jsx` | Main React component containing the password generator interface and functionality. |
+| `src/index.css` | Imports Tailwind CSS and provides the global stylesheet entry point. |
+| `src/main.jsx` | Entry point that renders the React application using `createRoot`. |
+| `index.html` | HTML document serving as the application entry point and referencing the favicon. |
+| `vite.config.js` | Configures Vite and its React and Tailwind CSS plugins. |
+| `eslint.config.js` | Contains ESLint configuration. |
+| `.prettierrc.json` | Contains Prettier formatting preferences. |
+| `package.json` | Defines project dependencies and npm scripts. |
+| `package-lock.json` | Locks dependency versions for consistent installations. |
+| `.gitignore` | Specifies files and directories Git should ignore. |
+| `vercel.json` | Contains Vercel deployment and configuration settings. |
 
 ## ⚙️ How It Works
 
